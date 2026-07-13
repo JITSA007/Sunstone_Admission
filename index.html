@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply now for future-ready UG and PG programs at Sunstone. Experience an AI-integrated curriculum, 500+ hours of placement training, and get job-ready from Day-1.">
+    <meta name="keywords" content="Sunstone, UG programs, PG programs, MBA, MCA, BBA, BCA, B.Tech, college admissions, placement guarantee">
+    <meta name="author" content="Sunstone">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Apply Now for UG & PG Programs - Sunstone">
+    <meta property="og:description" content="Transform your ambition into a high-growth career. Join 20,000+ students with our industry-aligned curriculum.">
+    <meta property="og:type" content="website">
+
+    <title>Apply Now for UG & PG Programs - Sunstone</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a', // Deep blue
+                            orange: '#f59e0b', // Amber/Orange
+                            light: '#f8fafc',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom minimal styling for smooth scrolling and form elements */
+        html { scroll-behavior: smooth; }
+        body { -webkit-font-smoothing: antialiased; }
+        
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+        }
+
+        /* Hide scrollbar for clean carousel look */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 selection:bg-brand-orange selection:text-white">
+
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Text Logo for minimal setup, replace with actual img tag if needed -->
+                    <span class="font-bold text-2xl tracking-tighter text-brand-blue uppercase">Sunstone</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#apply" class="text-sm font-medium text-gray-500 hover:text-gray-900 hidden sm:block">Help <span class="bg-blue-100 text-blue-600 rounded-full p-1 inline-flex ml-1">📞</span></a>
+                    <a href="#apply" class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-brand-orange hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange transition-colors">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-10 px-4 sm:px-6 lg:px-8">
+                    
+                    <main class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+                        <div class="sm:text-center lg:text-left">
+                            <span class="text-sm font-semibold tracking-wide text-gray-500 uppercase">Admissions Open 2026-27</span>
+                            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mt-2">
+                                <span class="block">Future-Ready</span>
+                                <span class="block text-brand-blue">UG and PG Programs</span>
+                            </h1>
+                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                Experience the AI-integrated curriculum designed to meet the world's hiring standards. Join top colleges in India for MBA, MCA, BBA, BCA, B.Tech, and BE.
+                            </p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <!-- Lead Form Overlay on Desktop, Stacked on Mobile -->
+            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-gray-50 lg:bg-transparent lg:py-10 flex justify-center items-center px-4 sm:px-6">
+                <div id="apply" class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 w-full max-w-md border border-gray-100 z-20">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex justify-between items-center">
+                        Apply Now
+                        <span class="text-xs font-normal text-gray-500 bg-gray-100 px-2 py-1 rounded-full cursor-help" title="Need help? Call us.">Help 📞</span>
+                    </h2>
+                    
+                    <form id="applicationForm" class="space-y-4">
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="fullName" id="fullName" required placeholder="Enter your name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-brand-blue focus:border-brand-blue sm:text-sm transition-colors">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email ID</label>
+                            <input type="email" name="email" id="email" required placeholder="eg. riya@gmail.com" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-brand-blue focus:border-brand-blue sm:text-sm transition-colors">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="state" class="block text-sm font-medium text-gray-700">Select State</label>
+                                <select id="state" name="state" required class="form-select mt-1 block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-brand-blue focus:border-brand-blue sm:text-sm">
+                                    <option value="" disabled selected>Select state</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="city" class="block text-sm font-medium text-gray-700">Select City</label>
+                                <select id="city" name="city" required class="form-select mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-brand-blue focus:border-brand-blue sm:text-sm">
+                                    <option value="" disabled selected>Select city</option>
+                                    <option value="New Delhi">New Delhi</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="program" class="block text-sm font-medium text-gray-700">I want to pursue</label>
+                            <select id="program" name="program" required class="form-select mt-1 block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-brand-blue focus:border-brand-blue sm:text-sm">
+                                <option value="" disabled selected>Select program</option>
+                                <option value="MBA">MBA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="BCA">BCA</option>
+                                <option value="B.Tech">B.Tech</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500 sm:text-sm">+91</span>
+                                <input type="tel" name="mobile" id="mobile" pattern="[0-9]{10}" required placeholder="Enter 10-digit mobile number" class="block w-full border border-gray-300 rounded-md py-2 pl-10 px-3 focus:outline-none focus:ring-brand-blue focus:border-brand-blue sm:text-sm transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" id="submitBtn" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-slate-400 hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-all cursor-not-allowed" disabled>
+                                Fill details to Submit
+                            </button>
+                        </div>
+                        
+                        <!-- Form Message Container -->
+                        <div id="formMessage" class="hidden rounded-md p-4 text-sm mt-2 text-center"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-end mb-8">
+                    <div>
+                        <h2 class="text-3xl font-extrabold tracking-tight">Top UG and PG Colleges in India</h2>
+                        <p class="mt-2 text-gray-400">Select program to get customized college list</p>
+                    </div>
+                    <a href="#" class="hidden sm:inline-flex text-sm text-brand-orange hover:text-white transition-colors">View All Colleges &rarr;</a>
+                </div>
+
+                <!-- Horizontal scrollable container for mobile, grid for desktop -->
+                <div class="flex overflow-x-auto gap-6 pb-4 hide-scrollbar md:grid md:grid-cols-3 md:overflow-visible">
+                    
+                    <!-- College Card 1 -->
+                    <article class="flex-none w-80 md:w-auto bg-white text-gray-900 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                        <img src="https://placehold.co/400x200/e2e8f0/475569?text=Ajeenkya+DY+Patil+University" alt="Ajeenkya DY Patil University Campus" class="h-48 w-full object-cover">
+                        <div class="p-5 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg leading-tight">Ajeenkya DY Patil University, Pune</h3>
+                                <p class="text-xs text-gray-500 mt-1">MBA, MCA, BBA +1 | UGC recognised</p>
+                                
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center"><span class="mr-2 text-green-500">✓</span> 0% EMI available</li>
+                                    <li class="flex items-center"><span class="mr-2 text-gray-400">🏢</span> Library, Cafeteria...</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 border-t pt-4 flex justify-between items-center">
+                                <div>
+                                    <p class="text-xs text-gray-500">Total Fees</p>
+                                    <p class="font-semibold text-brand-blue">₹ 4.20 - 7.00 Lacs</p>
+                                </div>
+                                <a href="#apply" class="text-brand-orange bg-orange-50 hover:bg-orange-100 p-2 rounded-lg text-sm font-medium transition-colors">Book Tour</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- College Card 2 -->
+                    <article class="flex-none w-80 md:w-auto bg-white text-gray-900 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                        <img src="https://placehold.co/400x200/e2e8f0/475569?text=Rayat+Bahra+University" alt="Rayat Bahra University Campus" class="h-48 w-full object-cover">
+                        <div class="p-5 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg leading-tight">Rayat Bahra University, Mohali</h3>
+                                <p class="text-xs text-gray-500 mt-1">BBA, BCA, B.Tech +1 | UGC recognised</p>
+                                
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center"><span class="mr-2 text-green-500">✓</span> 0% EMI available</li>
+                                    <li class="flex items-center"><span class="mr-2 text-gray-400">🏢</span> Library, Wifi Enabled...</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 border-t pt-4 flex justify-between items-center">
+                                <div>
+                                    <p class="text-xs text-gray-500">Total Fees</p>
+                                    <p class="font-semibold text-brand-blue">₹ 2.55 - 5.10 Lacs</p>
+                                </div>
+                                <a href="#apply" class="text-brand-orange bg-orange-50 hover:bg-orange-100 p-2 rounded-lg text-sm font-medium transition-colors">Book Tour</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- College Card 3 -->
+                    <article class="flex-none w-80 md:w-auto bg-white text-gray-900 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                        <img src="https://placehold.co/400x200/e2e8f0/475569?text=SAGE+University" alt="SAGE University Campus" class="h-48 w-full object-cover">
+                        <div class="p-5 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg leading-tight">SAGE University, Bhopal</h3>
+                                <p class="text-xs text-gray-500 mt-1">MBA, BBA, B.Tech | AICTE approved</p>
+                                
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center"><span class="mr-2 text-green-500">✓</span> 0% EMI available</li>
+                                    <li class="flex items-center"><span class="mr-2 text-gray-400">🏢</span> Cafeteria, Wifi Enable...</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 border-t pt-4 flex justify-between items-center">
+                                <div>
+                                    <p class="text-xs text-gray-500">Total Fees</p>
+                                    <p class="font-semibold text-brand-blue">₹ 2.40 - 4.40 Lacs</p>
+                                </div>
+                                <a href="#apply" class="text-brand-orange bg-orange-50 hover:bg-orange-100 p-2 rounded-lg text-sm font-medium transition-colors">Book Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-brand-blue text-white overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10">
+                 <!-- Abstract background pattern -->
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="a" patternUnits="userSpaceOnUse" width="40" height="40"><path d="M0 40V0h40v40H0zm20-20a10 10 0 110-20 10 10 0 010 20z" fill="#fff" fill-rule="evenodd"/></pattern></defs><rect width="100%" height="100%" fill="url(#a)"/></svg>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
+                        Get Job-Ready from Day-1<br>
+                        with <span class="bg-brand-orange text-white px-2 py-1 inline-block mt-2 rounded shadow-sm">PRIME</span>
+                    </h2>
+                    
+                    <h3 class="text-xl text-yellow-300 font-semibold mb-6 mt-8">How Sunstone PRIME Delivers</h3>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-brand-orange mr-3">✦</span>
+                            <span><strong>500+ hours</strong> of placement-focused training</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-orange mr-3">✦</span>
+                            <span><strong>300+ profile-building outputs</strong> (problems, projects, certifications)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-orange mr-3">✦</span>
+                            <span><strong>200+ hours</strong> of interview & aptitude prep</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-orange mr-3">✦</span>
+                            <span><strong>Semester-wise AMCAT</strong> + AI mock interviews</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-orange mr-3">✦</span>
+                            <span><strong>Personalised 1:1</strong> career mentorship</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/500x600/1e3a8a/ffffff?text=Student+Success" alt="Successful Student" class="rounded-lg shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-300">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16 text-center">
+                    <div class="p-6 bg-gray-50 rounded-2xl shadow-sm border border-gray-100">
+                        <p class="text-4xl font-extrabold text-brand-blue">5,000+</p>
+                        <p class="mt-2 text-sm font-medium text-gray-500 uppercase tracking-wide">Students Placed</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl shadow-sm border border-gray-100">
+                        <p class="text-4xl font-extrabold text-brand-blue">26 LPA</p>
+                        <p class="mt-2 text-sm font-medium text-gray-500 uppercase tracking-wide">Highest Salary</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl shadow-sm border border-gray-100">
+                        <p class="text-4xl font-extrabold text-brand-blue">1,200+</p>
+                        <p class="mt-2 text-sm font-medium text-gray-500 uppercase tracking-wide">Total Recruiters</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl shadow-sm border border-gray-100">
+                        <p class="text-4xl font-extrabold text-brand-blue">4.6 LPA</p>
+                        <p class="mt-2 text-sm font-medium text-gray-500 uppercase tracking-wide">Average Salary</p>
+                    </div>
+                </div>
+
+                <!-- Recruiters Marquee Simulation -->
+                <div class="text-center">
+                    <h3 class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-8">Our Top Recruiters</h3>
+                    <div class="flex flex-wrap justify-center gap-8 items-center opacity-70">
+                        <!-- Using semantic text representation for logos to keep it minimal and self-contained -->
+                        <span class="text-xl font-bold text-gray-800">amazon</span>
+                        <span class="text-xl font-bold text-purple-700">BYJU'S</span>
+                        <span class="text-xl font-bold text-red-600">zomato</span>
+                        <span class="text-xl font-bold text-orange-600">SWIGGY</span>
+                        <span class="text-xl font-bold text-blue-600">Flipkart</span>
+                        <span class="text-xl font-bold text-gray-800">accenture</span>
+                        <span class="text-xl font-bold text-red-500">OYO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    
+                    <!-- Testimonial -->
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Success Stories</h2>
+                        <div class="bg-white rounded-2xl shadow-xl p-8 border-l-4 border-brand-orange relative">
+                            <span class="text-6xl text-gray-200 absolute top-4 left-4 font-serif">"</span>
+                            <p class="text-lg text-gray-700 italic relative z-10 mb-6">
+                                Sunstone transformed me! With expert faculty, an updated curriculum, and endless opportunities, I gained new skills, topped my course, and secured multiple job offers before graduating.
+                            </p>
+                            <div class="flex items-center">
+                                <div class="h-12 w-12 rounded-full bg-brand-blue flex justify-center items-center text-white font-bold text-xl">PD</div>
+                                <div class="ml-4">
+                                    <p class="font-bold text-gray-900">Prince Dewani</p>
+                                    <p class="text-sm text-gray-500">MBA - Sage University, Bhopal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Philosophy -->
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-gray-900 mb-8">The Sunstone Philosophy</h2>
+                        <div class="space-y-8">
+                            <div class="flex">
+                                <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-blue-100 text-brand-blue flex justify-center items-center text-2xl shadow-sm">👨‍🏫</div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-gray-900">Learn from recruiters</h4>
+                                    <p class="mt-1 text-gray-500">Gain insights directly from industry leaders who know exactly what they are looking for.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-orange-100 text-brand-orange flex justify-center items-center text-2xl shadow-sm">⚙️</div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-gray-900">Practise in the real world</h4>
+                                    <p class="mt-1 text-gray-500">Apply theory to practice with real-world problem statements and internships.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-green-100 text-green-600 flex justify-center items-center text-2xl shadow-sm">📁</div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-bold text-gray-900">Create your own portfolio</h4>
+                                    <p class="mt-1 text-gray-500">Build a tangible portfolio of projects that proves your capability to future employers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Sunstone Against Traditional Education</h2>
+                    <p class="mt-4 text-lg text-gray-500">See why 20,000+ students chose us to transform their careers.</p>
+                </div>
+
+                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-300">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6 w-1/3">Key Features</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-brand-blue w-1/3 bg-blue-50">Sunstone Powered Colleges</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-500 w-1/3">Traditional Education</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white">
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Curriculum</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-700 bg-blue-50/30">Tech-led curriculum updated yearly to match industry needs</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Outdated theoretical syllabus</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Faculty</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-700 bg-blue-50/30">Industry-led learning from practitioners</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Academicians with limited industry exposure</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Experience</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-700 bg-blue-50/30">6 months of paid internships or live projects</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Rote learning, limited practicals</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Career Support</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-700 bg-blue-50/30">Mentorship, portfolio building, guaranteed interviews</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Basic placement cell, no guarantee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#apply" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-blue hover:bg-blue-800 md:py-4 md:text-lg md:px-10 shadow-lg transition-transform transform hover:-translate-y-1">
+                        Apply Now for 2026-27
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="font-bold text-2xl tracking-tighter text-white uppercase">Sunstone</span>
+            <p class="mt-4 text-gray-400 text-sm">Empowering students with industry-ready skills.</p>
+            <div class="mt-8 border-t border-gray-800 pt-8">
+                <p class="text-sm text-gray-500">&copy; 2026 Sunstone Education. All rights reserved. (Demo Template)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('applicationForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const messageDiv = document.getElementById('formMessage');
+            
+            // Function to check if all required fields are filled to enable button
+            const checkFormValidity = () => {
+                const isValid = form.checkValidity();
+                if (isValid) {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-slate-400', 'cursor-not-allowed');
+                    submitBtn.classList.add('bg-brand-blue', 'hover:bg-blue-800');
+                    submitBtn.innerText = 'Submit Application';
+                } else {
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('bg-slate-400', 'cursor-not-allowed');
+                    submitBtn.classList.remove('bg-brand-blue', 'hover:bg-blue-800');
+                    submitBtn.innerText = 'Fill details to Submit';
+                }
+            };
+
+            // Listen to input changes to validate in real-time
+            form.addEventListener('input', checkFormValidity);
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                // Show loading state
+                const originalText = submitBtn.innerText;
+                submitBtn.innerText = 'Submitting...';
+                submitBtn.disabled = true;
+                submitBtn.classList.add('opacity-75', 'cursor-wait');
+
+                // Collect Data
+                const formData = new FormData(form);
+                
+                /* 
+                 * ==========================================
+                 * GOOGLE SHEETS INTEGRATION SETUP
+                 * ==========================================
+                 * 1. Go to Google Sheets -> Extensions -> Apps Script
+                 * 2. Paste the following code in Code.gs:
+                 * 
+                 *    function doPost(e) {
+                 *      var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+                 *      var rowData = [];
+                 *      // Match these keys to the 'name' attributes in your HTML form inputs
+                 *      rowData.push(new Date()); 
+                 *      rowData.push(e.parameter.fullName);
+                 *      rowData.push(e.parameter.email);
+                 *      rowData.push(e.parameter.state);
+                 *      rowData.push(e.parameter.city);
+                 *      rowData.push(e.parameter.program);
+                 *      rowData.push(e.parameter.mobile);
+                 *      sheet.appendRow(rowData);
+                 *      return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+                 *    }
+                 * 
+                 * 3. Click Deploy -> New Deployment -> Select 'Web app'
+                 * 4. Execute as: Me. Who has access: Anyone.
+                 * 5. Copy the generated Web App URL and paste it below.
+                 */
+                
+                // REPLACE THIS URL with your deployed Google Apps Script URL
+                const GOOGLE_SCRIPT_WEBHOOK_URL = 'https://script.google.com/macros/library/d/1-38z6c_gSYDrkbPcRzQzZjk45aHZqXY7VAksFePC5hlfLzz9WK9Ykku7/1'; 
+
+                try {
+                    // We simulate the fetch if the URL hasn't been replaced
+                    if (GOOGLE_SCRIPT_WEBHOOK_URL === 'https://script.google.com/macros/library/d/1-38z6c_gSYDrkbPcRzQzZjk45aHZqXY7VAksFePC5hlfLzz9WK9Ykku7/1') {
+                        // Simulation of network delay
+                        await new Promise(resolve => setTimeout(resolve, 1500));
+                        
+                        console.log("Data that would be sent to Sheets:");
+                        for (let [key, value] of formData.entries()) {
+                            console.log(`${key}: ${value}`);
+                        }
+
+                        // Success UI
+                        showMessage('success', 'Application submitted successfully! (Simulation Mode: Connect your Webhook URL in the code to actually save to sheets).');
+                        form.reset();
+                        checkFormValidity(); // Reset button state
+                        
+                    } else {
+                        // REAL FETCH REQUEST
+                        const response = await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        if (response.ok) {
+                            showMessage('success', 'Thank you! Your application has been submitted successfully.');
+                            form.reset();
+                            checkFormValidity();
+                        } else {
+                            throw new Error('Network response was not ok.');
+                        }
+                    }
+                } catch (error) {
+                    console.error('Submission Error:', error);
+                    showMessage('error', 'Something went wrong. Please try again later.');
+                } finally {
+                    // Reset button
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-75', 'cursor-wait');
+                }
+            });
+
+            // Helper to show messages without using alert()
+            function showMessage(type, text) {
+                messageDiv.textContent = text;
+                messageDiv.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
+                
+                if (type === 'success') {
+                    messageDiv.classList.add('bg-green-100', 'text-green-800');
+                } else {
+                    messageDiv.classList.add('bg-red-100', 'text-red-800');
+                }
+                
+                // Auto hide after 8 seconds
+                setTimeout(() => {
+                    messageDiv.classList.add('hidden');
+                }, 8000);
+            }
+        });
+    </script>
+</body>
+</html>
