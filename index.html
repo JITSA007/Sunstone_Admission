@@ -480,70 +480,29 @@
                 submitBtn.disabled = true;
                 submitBtn.classList.add('opacity-75', 'cursor-wait');
 
-                // Collect Data
+                // Collect Data and convert to URL-encoded format which Google Apps Script prefers
                 const formData = new FormData(form);
+                const data = new URLSearchParams(formData); 
                 
-                /* 
-                 * ==========================================
-                 * GOOGLE SHEETS INTEGRATION SETUP
-                 * ==========================================
-                 * 1. Go to Google Sheets -> Extensions -> Apps Script
-                 * 2. Paste the following code in Code.gs:
-                 * 
-                 *    function doPost(e) {
-                 *      var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-                 *      var rowData = [];
-                 *      // Match these keys to the 'name' attributes in your HTML form inputs
-                 *      rowData.push(new Date()); 
-                 *      rowData.push(e.parameter.fullName);
-                 *      rowData.push(e.parameter.email);
-                 *      rowData.push(e.parameter.state);
-                 *      rowData.push(e.parameter.city);
-                 *      rowData.push(e.parameter.program);
-                 *      rowData.push(e.parameter.mobile);
-                 *      sheet.appendRow(rowData);
-                 *      return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
-                 *    }
-                 * 
-                 * 3. Click Deploy -> New Deployment -> Select 'Web app'
-                 * 4. Execute as: Me. Who has access: Anyone.
-                 * 5. Copy the generated Web App URL and paste it below.
-                 */
-                
-                // REPLACE THIS URL with your deployed Google Apps Script URL
-                const GOOGLE_SCRIPT_WEBHOOK_URL = 'https://script.google.com/macros/library/d/1-38z6c_gSYDrkbPcRzQzZjk45aHZqXY7VAksFePC5hlfLzz9WK9Ykku7/1'; 
+                // Your live Google Apps Script Web App URL
+                const GOOGLE_SCRIPT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbw8aFJS4wpcmw0kIYzQOI9j5xLOCgtZwZXoOy_fZZD4UP0WNHCfnrqAaphnNGwerbVg/exec'; 
 
                 try {
-                    // We simulate the fetch if the URL hasn't been replaced
-                    if (GOOGLE_SCRIPT_WEBHOOK_URL === 'https://script.google.com/macros/library/d/1-38z6c_gSYDrkbPcRzQzZjk45aHZqXY7VAksFePC5hlfLzz9WK9Ykku7/1') {
-                        // Simulation of network delay
-                        await new Promise(resolve => setTimeout(resolve, 1500));
-                        
-                        console.log("Data that would be sent to Sheets:");
-                        for (let [key, value] of formData.entries()) {
-                            console.log(`${key}: ${value}`);
-                        }
+                    // REAL FETCH REQUEST
+                    await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
+                        method: 'POST',
+                        mode: 'no-cors', // Crucial for preventing browser CORS blocks
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: data
+                    });
 
-                        // Success UI
-                        showMessage('success', 'Application submitted successfully! (Simulation Mode: Connect your Webhook URL in the code to actually save to sheets).');
-                        form.reset();
-                        checkFormValidity(); // Reset button state
-                        
-                    } else {
-                        // REAL FETCH REQUEST
-                        const response = await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
-                            method: 'POST',
-                            body: formData
-                        });
-
-                        if (response.ok) {
-                            showMessage('success', 'Thank you! Your application has been submitted successfully.');
-                            form.reset();
-                            checkFormValidity();
-                        } else {
-                            throw new Error('Network response was not ok.');
-                        }
-                    }
+                    // Because of 'no-cors', we assume success if it didn't throw a network error
+                    showMessage('success', 'Thank you! Your application has been submitted successfully.');
+                    form.reset();
+                    checkFormValidity();
+                    
                 } catch (error) {
                     console.error('Submission Error:', error);
                     showMessage('error', 'Something went wrong. Please try again later.');
